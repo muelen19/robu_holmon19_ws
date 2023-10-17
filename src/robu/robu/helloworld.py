@@ -1,4 +1,4 @@
-Pdef main():
+def main():
     print('Hi from robu.')
 
 
