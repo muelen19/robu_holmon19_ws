@@ -26,6 +26,8 @@ Communications Failed
 #72...H vorwärts
 #80...P rückwärtss
 #27...Escape
+#103...G Gerade
+
 key_ctrl = [75, 77, 72, 80]
 
 def get_key():

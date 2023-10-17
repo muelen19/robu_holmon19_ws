@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000838] (robu) JobQueued: {'identifier': 'robu', 'dependencies': OrderedDict()}
+[0.000922] (robu) JobStarted: {'identifier': 'robu'}
+[0.099144] (-) TimerEvent: {}
+[0.199970] (-) TimerEvent: {}
+[0.300718] (-) TimerEvent: {}
+[0.401538] (-) TimerEvent: {}
+[0.502422] (-) TimerEvent: {}
+[0.603182] (-) TimerEvent: {}
+[0.704015] (-) TimerEvent: {}
+[0.804793] (-) TimerEvent: {}
+[0.905212] (-) TimerEvent: {}
+[1.005995] (-) TimerEvent: {}
+[1.106778] (-) TimerEvent: {}
+[1.149579] (robu) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/robu/work/robu_holmon19_ws/build/robu/build', '--no-deps', 'install_data'], 'cwd': '/home/robu/work/robu_holmon19_ws/build/robu', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/robu', 'LANGUAGE': 'en_US:', 'USER': 'robu', 'LC_TIME': 'de_AT.UTF-8', 'VSCODE_NLS_CONFIG': '{"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/robu/work/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/robu', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.82.2', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-481ff8e1-1.82-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL': '1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'de_AT.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1005', 'SYSTEMD_EXEC_PID': '1228', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3852', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'COLCON_PREFIX_PATH': '/home/robu/work/turtlebot3_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robu', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:33970', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robu', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/robu/work/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/robu-desktop:@/tmp/.ICE-unix/1184,unix/robu-desktop:/tmp/.ICE-unix/1184', 'VSCODE_AMD_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'INVOCATION_ID': '358ae09f7b1c422682a3c807af5b5e66', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_AT.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'de_AT.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BLQOC2', 'LS_COLORS': '', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1aa47db322.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robu/work/turtlebot3_ws/install/turtlebot3:/home/robu/work/turtlebot3_ws/install/turtlebot3_teleop:/home/robu/work/turtlebot3_ws/install/turtlebot3_simulations:/home/robu/work/turtlebot3_ws/install/turtlebot3_bringup:/home/robu/work/turtlebot3_ws/install/turtlebot3_node:/home/robu/work/turtlebot3_ws/install/turtlebot3_navigation2:/home/robu/work/turtlebot3_ws/install/turtlebot3_fake_node:/home/robu/work/turtlebot3_ws/install/turtlebot3_example:/home/robu/work/turtlebot3_ws/install/turtlebot3_msgs:/home/robu/work/turtlebot3_ws/install/turtlebot3_gazebo:/home/robu/work/turtlebot3_ws/install/turtlebot3_description:/home/robu/work/turtlebot3_ws/install/turtlebot3_cartographer:/home/robu/work/turtlebot3_ws/install/ld08_driver:/home/robu/work/turtlebot3_ws/install/hls_lfcd_lds_driver:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk_examples:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'de_AT.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_AT.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'de_AT.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robu/work/robu_holmon19_ws/build/robu', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/robu/.config/Code/CachedData/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:/home/robu/work/turtlebot3_ws/build/turtlebot3_teleop:/home/robu/work/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/robu/work/turtlebot3_ws/build/turtlebot3_example:/home/robu/work/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/robu/work/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_AT.UTF-8', 'LC_PAPER': 'de_AT.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/robu/work/turtlebot3_ws/install/turtlebot3:/home/robu/work/turtlebot3_ws/install/turtlebot3_simulations:/home/robu/work/turtlebot3_ws/install/turtlebot3_bringup:/home/robu/work/turtlebot3_ws/install/turtlebot3_node:/home/robu/work/turtlebot3_ws/install/turtlebot3_navigation2:/home/robu/work/turtlebot3_ws/install/turtlebot3_fake_node:/home/robu/work/turtlebot3_ws/install/turtlebot3_msgs:/home/robu/work/turtlebot3_ws/install/turtlebot3_gazebo:/home/robu/work/turtlebot3_ws/install/turtlebot3_description:/home/robu/work/turtlebot3_ws/install/turtlebot3_cartographer:/home/robu/work/turtlebot3_ws/install/ld08_driver:/home/robu/work/turtlebot3_ws/install/hls_lfcd_lds_driver:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk_examples:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/robu/work/turtlebot3_ws/install/dynamixel_sdk', 'VSCODE_PID': '3852'}, 'shell': False}
+[1.207559] (-) TimerEvent: {}
+[1.308350] (-) TimerEvent: {}
+[1.409156] (-) TimerEvent: {}
+[1.509979] (-) TimerEvent: {}
+[1.556633] (robu) StdoutLine: {'line': b'running develop\n'}
+[1.610287] (-) TimerEvent: {}
+[1.711120] (-) TimerEvent: {}
+[1.798322] (robu) StdoutLine: {'line': b'running egg_info\n'}
+[1.798744] (robu) StdoutLine: {'line': b'creating robu.egg-info\n'}
+[1.799013] (robu) StdoutLine: {'line': b'writing robu.egg-info/PKG-INFO\n'}
+[1.799412] (robu) StdoutLine: {'line': b'writing dependency_links to robu.egg-info/dependency_links.txt\n'}
+[1.799847] (robu) StdoutLine: {'line': b'writing entry points to robu.egg-info/entry_points.txt\n'}
+[1.800068] (robu) StdoutLine: {'line': b'writing requirements to robu.egg-info/requires.txt\n'}
+[1.800250] (robu) StdoutLine: {'line': b'writing top-level names to robu.egg-info/top_level.txt\n'}
+[1.800641] (robu) StdoutLine: {'line': b"writing manifest file 'robu.egg-info/SOURCES.txt'\n"}
+[1.803002] (robu) StdoutLine: {'line': b"reading manifest file 'robu.egg-info/SOURCES.txt'\n"}
+[1.803915] (robu) StdoutLine: {'line': b"writing manifest file 'robu.egg-info/SOURCES.txt'\n"}
+[1.805791] (robu) StdoutLine: {'line': b'running build_ext\n'}
+[1.806149] (robu) StdoutLine: {'line': b'Creating /home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu.egg-link (link to .)\n'}
+[1.807096] (robu) StdoutLine: {'line': b'Installing ex02_remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.807395] (robu) StdoutLine: {'line': b'Installing ex03_obstacle_avoidance_simple script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.807709] (robu) StdoutLine: {'line': b'Installing ex03_obstacle_avoidance_simple_mapping script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.807936] (robu) StdoutLine: {'line': b'Installing helloworld script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.808156] (robu) StdoutLine: {'line': b'Installing remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.808396] (robu) StdoutLine: {'line': b'Installing remotectrl_listener script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.808606] (robu) StdoutLine: {'line': b'Installing remotectrl_sus script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu\n'}
+[1.808910] (robu) StdoutLine: {'line': b'\n'}
+[1.809173] (robu) StdoutLine: {'line': b'Installed /home/robu/work/robu_holmon19_ws/build/robu\n'}
+[1.809420] (robu) StdoutLine: {'line': b'running install_data\n'}
+[1.809600] (robu) StdoutLine: {'line': b'creating /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index\n'}
+[1.811403] (robu) StdoutLine: {'line': b'creating /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index/resource_index\n'}
+[1.811614] (-) TimerEvent: {}
+[1.811785] (robu) StdoutLine: {'line': b'creating /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index/resource_index/packages\n'}
+[1.811975] (robu) StdoutLine: {'line': b'copying resource/robu -> /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index/resource_index/packages\n'}
+[1.812143] (robu) StdoutLine: {'line': b'copying package.xml -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu\n'}
+[1.812601] (robu) StdoutLine: {'line': b'copying launch/ex05_mapping_rm_launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu\n'}
+[1.813796] (robu) StdoutLine: {'line': b'copying launch/occupancy_grid.launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu\n'}
+[1.813943] (robu) StdoutLine: {'line': b'copying launch/cartographer.launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu\n'}
+[1.814032] (robu) StdoutLine: {'line': b'copying launch/ex04_obstacle_avoidance_simple_launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu\n'}
+[1.814115] (robu) StdoutLine: {'line': b'copying launch/ex05_mapping_tb_launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu\n'}
+[1.814195] (robu) StdoutLine: {'line': b'creating /home/robu/work/robu_holmon19_ws/install/robu/share/robu/rviz\n'}
+[1.814276] (robu) StdoutLine: {'line': b'copying rviz/tb3_cartographer.rviz -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu/rviz\n'}
+[1.814381] (robu) StdoutLine: {'line': b'creating /home/robu/work/robu_holmon19_ws/install/robu/share/robu/config\n'}
+[1.814468] (robu) StdoutLine: {'line': b'copying config/turtlebot3_lds_2d.lua -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu/config\n'}
+[1.861215] (robu) CommandEnded: {'returncode': 0}
+[1.900053] (robu) JobEnded: {'identifier': 'robu', 'rc': 0}
+[1.901522] (-) EventReactorShutdown: {}

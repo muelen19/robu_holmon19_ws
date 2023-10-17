@@ -1,0 +1,37 @@
+running develop
+running egg_info
+creating robu.egg-info
+writing robu.egg-info/PKG-INFO
+writing dependency_links to robu.egg-info/dependency_links.txt
+writing entry points to robu.egg-info/entry_points.txt
+writing requirements to robu.egg-info/requires.txt
+writing top-level names to robu.egg-info/top_level.txt
+writing manifest file 'robu.egg-info/SOURCES.txt'
+reading manifest file 'robu.egg-info/SOURCES.txt'
+writing manifest file 'robu.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu.egg-link (link to .)
+Installing ex02_remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+Installing ex03_obstacle_avoidance_simple script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+Installing ex03_obstacle_avoidance_simple_mapping script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+Installing helloworld script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+Installing remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+Installing remotectrl_listener script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+Installing remotectrl_sus script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+
+Installed /home/robu/work/robu_holmon19_ws/build/robu
+running install_data
+creating /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index
+creating /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index/resource_index
+creating /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index/resource_index/packages
+copying resource/robu -> /home/robu/work/robu_holmon19_ws/install/robu/share/ament_index/resource_index/packages
+copying package.xml -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu
+copying launch/ex05_mapping_rm_launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu
+copying launch/occupancy_grid.launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu
+copying launch/cartographer.launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu
+copying launch/ex04_obstacle_avoidance_simple_launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu
+copying launch/ex05_mapping_tb_launch.py -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu
+creating /home/robu/work/robu_holmon19_ws/install/robu/share/robu/rviz
+copying rviz/tb3_cartographer.rviz -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu/rviz
+creating /home/robu/work/robu_holmon19_ws/install/robu/share/robu/config
+copying config/turtlebot3_lds_2d.lua -> /home/robu/work/robu_holmon19_ws/install/robu/share/robu/config
