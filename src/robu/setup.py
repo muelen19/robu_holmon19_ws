@@ -33,6 +33,9 @@ setup(
             'ex03_obstacle_avoidance_simple=robu.ex03_obstacle_avoidance_simple:main',
             'ex03_obstacle_avoidance_simple_mapping=robu.ex03_obstacle_avoidance_simple_mapping:main',
             'ex02_remotectrl = robu.ex02_remotectrl:main',
+            'ex10_wallfollower = robu.ex10_wallfollower:main',
+            'mypublisher = robu.publisher_member_function:main',
+            'mysubscriber = robu.subscriber_member_function:main',
         ],
     },
 )
