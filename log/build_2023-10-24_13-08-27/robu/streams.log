@@ -1,0 +1,26 @@
+[1.370s] Invoking command in '/home/robu/work/robu_holmon19_ws/build/robu': PYTHONPATH=/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robu/work/robu_holmon19_ws/build/robu/build --no-deps install_data
+[1.803s] running develop
+[2.047s] running egg_info
+[2.047s] writing robu.egg-info/PKG-INFO
+[2.047s] writing dependency_links to robu.egg-info/dependency_links.txt
+[2.048s] writing entry points to robu.egg-info/entry_points.txt
+[2.048s] writing requirements to robu.egg-info/requires.txt
+[2.048s] writing top-level names to robu.egg-info/top_level.txt
+[2.051s] reading manifest file 'robu.egg-info/SOURCES.txt'
+[2.053s] writing manifest file 'robu.egg-info/SOURCES.txt'
+[2.054s] running build_ext
+[2.055s] Creating /home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu.egg-link (link to .)
+[2.056s] Installing ex02_remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.056s] Installing ex03_obstacle_avoidance_simple script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.056s] Installing ex03_obstacle_avoidance_simple_mapping script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.057s] Installing ex10_wallfollower script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.057s] Installing helloworld script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.057s] Installing mypublisher script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.058s] Installing mysubscriber script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.058s] Installing remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.058s] Installing remotectrl_listener script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.060s] Installing remotectrl_sus script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[2.060s] 
+[2.060s] Installed /home/robu/work/robu_holmon19_ws/build/robu
+[2.060s] running install_data
+[2.117s] Invoked command in '/home/robu/work/robu_holmon19_ws/build/robu' returned '0': PYTHONPATH=/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/robu/work/robu_holmon19_ws/build/robu/build --no-deps install_data

@@ -4,7 +4,7 @@ import rclpy                                                        #Ros schnitt
 
 from std_msgs.msg import String                                                
 from geometry_msgs.msg import Twist
-from std_msgs.msg import LaserScan
+from sensor_msgs.msg import LaserScan
 
 from rclpy.qos import qos_profile_sensor_data
 
