@@ -1,7 +1,7 @@
 #Datein importieren fürs senden und empfangen von Ros Datein.................................................
 import math
 import rclpy                                                        #Ros schnittstelle für Python
-
+from rclpy.node import Node
 from std_msgs.msg import String                                                
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
@@ -15,13 +15,13 @@ from enum import IntEnum
 
 #Globale Variablen............................................................................................
 ROBOT_DIRECTION_FRONT_INDEX = 0
-ROBOT_DIRECTION_RIGHT_FRONT_INDEX = 45
-ROBOT_DIRECTION_RIGHT_INDEX = 90
-ROBOT_DIRECTION_RIGHT_REAR_INDEX = 135
+ROBOT_DIRECTION_RIGHT_FRONT_INDEX = 315
+ROBOT_DIRECTION_RIGHT_INDEX = 270
+ROBOT_DIRECTION_RIGHT_REAR_INDEX = 225
 ROBOT_DIRECTION_REAR_INDEX = 180
-ROBOT_DIRECTION_LEFT_REAR_INDEX = 225
-ROBOT_DIRECTION_LEFT_INDEX = 270
-ROBOT_DIRECTION_LEFT_FRONT_INDEX = 315
+ROBOT_DIRECTION_LEFT_REAR_INDEX = 135
+ROBOT_DIRECTION_LEFT_INDEX = 90
+ROBOT_DIRECTION_LEFT_FRONT_INDEX = 45
 #.............................................................................................................
 
 
@@ -30,12 +30,12 @@ class WallFollowerStates(IntEnum):
     WF_STATE_DETECTWALL = 0,
     WF_STATE_DRIVE2WALL = 1,
     WF_STATE_ROTATE2WALL = 2,
-    WF_STATE_FOLLOWWALL = 3,
+    WF_STATE_FOLLOWWALL = 3
 #.............................................................................................................
 
 
 #Node.........................................................................................................
-class WallFollower(rclpy.Node):
+class WallFollower(Node):
 
     #+++++ Konstruktor +++++
     def __init__ (self):                                            
@@ -50,6 +50,7 @@ class WallFollower(rclpy.Node):
         self.rightfront_dist = 999999.9
         self.right_dist = 999999.9
         self.rear_dist = 999999.9
+        self.distances = []
 
         self.wallfollower_state = WallFollowerStates.WF_STATE_DETECTWALL
 
@@ -57,31 +58,77 @@ class WallFollower(rclpy.Node):
         self.forward_speed_wf_fast = 0.1  #m/s
 
         self.turning_speed_wf_slow = 0.1  #rad/s
-        self.turning_speed_wf_slow = 1.0  #rad/s
+        self.turning_speed_wf_fast = 1.0  #rad/s
 
         self.dist_thresh_wf = 0.3         #m
         self.dist_hysteresis_wf = 0.02    #m
+        self.dist_laser_offset = 0.03     #m
+
+        self.valid_lidar_data = False
 
         self.timer = self.create_timer(0.2, self.timer_callback)
 
-
+    #Timer Callback 
     def timer_callback(self):
-        pass
+        if self.valid_lidar_data:        #warten bis gültige Lidar Daten vorhanden sind
+            self.follow_wall()
 
+
+    #Regler, State
+    def follow_wall(self):
+
+        #neue Nachricht anlegen
+        msg = Twist()
+        #Geschwindigkeiten null setzen
+        msg.linear.x = 0.0
+        msg.linear.y = 0.0
+        msg.linear.z = 0.0
+
+        msg.angular.x = 0.0
+        msg.angular.y = 0.0
+        msg.angular.z = 0.0
+
+        #State Detectwall
+        if self.wallfollower_state == WallFollowerStates.WF_STATE_DETECTWALL:
+            print("\nDetectwall\n")
+            dist_min = min(self.distances)
+            if self.front_dist > dist_min:
+                #wenn er knapp bei der wand ist dreh langsam
+                if abs(self.front_dist -dist_min < 0.2):
+                    print("Roboter dreht\n")
+                    msg.angular.z = self.turning_speed_wf_slow
+                #sonst schnell
+                else:
+                    print("Roboter dreht\n")
+                    msg.angular.z = self.turning_speed_wf_fast
+            else:
+                print("WF_STATE_DRIVE2Wall")
+                self.wallfollower_state = WallFollowerStates.WF_STATE_DRIVE2WALL
+
+        #Geschwindigkeiten rausschicken
+        print(msg)
+        self.cmd_vel_publisher.publish(msg)
+
+    
+    #Scan Callback, Lidar Daten holen
     def scan_callback(self, msg):
 
+        self.valid_lidar_data = True
         self.left_dist = msg.ranges[ROBOT_DIRECTION_LEFT_INDEX]
-        self.leftfront_dist = msg.ramges[ROBOT_DIRECTION_LEFT_FRONT_INDEX]
-        self.front_dist = msg.ramges[ROBOT_DIRECTION_FRONT_INDEX]
-        self.rightfront_dist = msg.ramges[ROBOT_DIRECTION_RIGHT_FRONT_INDEX]
-        self.right_dist = msg.ramges[ROBOT_DIRECTION_RIGHT_INDEX]
-        self.rear_dist = msg.ramges[ROBOT_DIRECTION_REAR_INDEX]
+        self.leftfront_dist = msg.ranges[ROBOT_DIRECTION_LEFT_FRONT_INDEX]
+        self.front_dist = msg.ranges[ROBOT_DIRECTION_FRONT_INDEX]
+        self.rightfront_dist = msg.ranges[ROBOT_DIRECTION_RIGHT_FRONT_INDEX]
+        self.right_dist = msg.ranges[ROBOT_DIRECTION_RIGHT_INDEX]
+        self.rear_dist = msg.ranges[ROBOT_DIRECTION_REAR_INDEX]
+        self.distances = msg.ranges
 
-        print("ld: %.2f m" %self.left_dist,
-              "lfd: %.2f m" %self.leftfront_dist,
-              "fd: %.2f m" %self.front_dist,
-              "rfd: %.2f m" %self.rightfront_dist,
-              "rd: %.2f m" %self.right_dist)
+        print("left: %.2f m\n" %self.left_dist,
+              "left front: %.2f m\n" %self.leftfront_dist,
+              "front: %.2f m\n" %self.front_dist,
+              "right front: %.2f m\n" %self.rightfront_dist,
+              "r: %.2f m\n" %self.right_dist,
+              "rear: %.2f m\n" %self.rear_dist,
+              "\n")
     
 #.............................................................................................................
 

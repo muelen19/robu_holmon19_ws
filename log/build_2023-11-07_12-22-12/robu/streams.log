@@ -1,0 +1,36 @@
+[1.359s] Invoking command in '/home/robu/work/robu_holmon19_ws/build/robu': PYTHONPATH=/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robu/work/robu_holmon19_ws/build/robu/build
+[1.985s] running develop
+[2.471s] Invoked command in '/home/robu/work/robu_holmon19_ws/build/robu' returned '0': PYTHONPATH=/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/robu/work/robu_holmon19_ws/build/robu/build
+[2.471s] Invoking command in '/home/robu/work/robu_holmon19_ws/src/robu': PYTHONPATH=/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robu build --build-base /home/robu/work/robu_holmon19_ws/build/robu/build install --record /home/robu/work/robu_holmon19_ws/build/robu/install.log --single-version-externally-managed
+[3.058s] running egg_info
+[3.065s] writing ../../build/robu/robu.egg-info/PKG-INFO
+[3.066s] writing dependency_links to ../../build/robu/robu.egg-info/dependency_links.txt
+[3.067s] writing entry points to ../../build/robu/robu.egg-info/entry_points.txt
+[3.068s] writing requirements to ../../build/robu/robu.egg-info/requires.txt
+[3.068s] writing top-level names to ../../build/robu/robu.egg-info/top_level.txt
+[3.072s] reading manifest file '../../build/robu/robu.egg-info/SOURCES.txt'
+[3.075s] writing manifest file '../../build/robu/robu.egg-info/SOURCES.txt'
+[3.076s] running build
+[3.077s] running build_py
+[3.078s] copying robu/ex10_wallfollower.py -> /home/robu/work/robu_holmon19_ws/build/robu/build/lib/robu
+[3.080s] running install
+[3.082s] running install_lib
+[3.084s] copying /home/robu/work/robu_holmon19_ws/build/robu/build/lib/robu/ex10_wallfollower.py -> /home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu
+[3.086s] byte-compiling /home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu/ex10_wallfollower.py to ex10_wallfollower.cpython-310.pyc
+[3.087s] running install_data
+[3.089s] running install_egg_info
+[3.094s] removing '/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu-0.0.0-py3.10.egg-info' (and everything under it)
+[3.095s] Copying ../../build/robu/robu.egg-info to /home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages/robu-0.0.0-py3.10.egg-info
+[3.100s] running install_scripts
+[3.140s] Installing ex02_remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.141s] Installing ex03_obstacle_avoidance_simple script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.142s] Installing ex03_obstacle_avoidance_simple_mapping script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.142s] Installing ex10_wallfollower script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.143s] Installing helloworld script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.143s] Installing mypublisher script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.144s] Installing mysubscriber script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.144s] Installing remotectrl script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.148s] Installing remotectrl_listener script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.149s] Installing remotectrl_sus script to /home/robu/work/robu_holmon19_ws/install/robu/lib/robu
+[3.150s] writing list of installed files to '/home/robu/work/robu_holmon19_ws/build/robu/install.log'
+[3.227s] Invoked command in '/home/robu/work/robu_holmon19_ws/src/robu' returned '0': PYTHONPATH=/home/robu/work/robu_holmon19_ws/build/robu/prefix_override:/home/robu/work/robu_holmon19_ws/install/robu/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robu build --build-base /home/robu/work/robu_holmon19_ws/build/robu/build install --record /home/robu/work/robu_holmon19_ws/build/robu/install.log --single-version-externally-managed
