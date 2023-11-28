@@ -25,7 +25,11 @@ robu/publisher_member_function.py
 robu/remotectrl_listener.py
 robu/remotectrl_sus.py
 robu/subscriber_member_function.py
+robu.egg-info/PKG-INFO
+robu.egg-info/SOURCES.txt
+robu.egg-info/dependency_links.txt
+robu.egg-info/entry_points.txt
+robu.egg-info/requires.txt
+robu.egg-info/top_level.txt
+robu.egg-info/zip-safe
 rviz/tb3_cartographer.rviz
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
