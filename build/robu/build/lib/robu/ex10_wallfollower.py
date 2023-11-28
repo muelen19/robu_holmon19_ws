@@ -15,13 +15,13 @@ from enum import IntEnum
 
 #Globale Variablen............................................................................................
 ROBOT_DIRECTION_FRONT_INDEX = 0
-ROBOT_DIRECTION_RIGHT_FRONT_INDEX = 315
+ROBOT_DIRECTION_RIGHT_FRONT_INDEX = 300
 ROBOT_DIRECTION_RIGHT_INDEX = 270
-ROBOT_DIRECTION_RIGHT_REAR_INDEX = 225
+ROBOT_DIRECTION_RIGHT_REAR_INDEX = 240
 ROBOT_DIRECTION_REAR_INDEX = 180
-ROBOT_DIRECTION_LEFT_REAR_INDEX = 135
+ROBOT_DIRECTION_LEFT_REAR_INDEX = 120
 ROBOT_DIRECTION_LEFT_INDEX = 90
-ROBOT_DIRECTION_LEFT_FRONT_INDEX = 45
+ROBOT_DIRECTION_LEFT_FRONT_INDEX = 60
 #.............................................................................................................
 
 
@@ -42,7 +42,7 @@ class WallFollower(Node):
     def __init__ (self):                                            
         super().__init__('Wallfollower')
         self.scan_subscriber = self.create_subscription(LaserScan, "/scan", self.scan_callback, qos_profile_sensor_data)
-        self.cmd_vel_publisher = self.create_publisher(Twist, "/cmd_vel", qos_profile_sensor_data)
+        self.cmd_vel_publisher = self.create_publisher(Twist, "/cmd_vel", 10)
 
         #+++++ Variablen +++++
         self.left_dist = 999999.9
@@ -203,13 +203,13 @@ class WallFollower(Node):
         self.rear_dist = msg.ranges[ROBOT_DIRECTION_REAR_INDEX]
         self.distances = msg.ranges
 
-        print("left: %.2f m\n" %self.left_dist,
-              "left front: %.2f m\n" %self.leftfront_dist,
-              "front: %.2f m\n" %self.front_dist,
-              "right front: %.2f m\n" %self.rightfront_dist,
-              "r: %.2f m\n" %self.right_dist,
-              "rear: %.2f m\n" %self.rear_dist,
-              "\n")
+        #print("left: %.2f m\n" %self.left_dist,
+        #      "left front: %.2f m\n" %self.leftfront_dist,
+        #      "front: %.2f m\n" %self.front_dist,
+        #      "right front: %.2f m\n" %self.rightfront_dist,
+        #      "r: %.2f m\n" %self.right_dist,
+        #      "rear: %.2f m\n" %self.rear_dist,
+        #      "\n")
     
 #.............................................................................................................
 
